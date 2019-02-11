@@ -1,0 +1,40 @@
+@import '../../theme/palette';
+
+.spinner {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    right: 40px;
+
+    .loader1,
+    .loader2,
+    .loader3 {
+        background: $paletteColor3;
+        border-radius: 50%;
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        position: absolute;
+        transform-origin: 0 25px;
+        top: 25px;
+        left: 50%;
+        animation: rotation1 1s ease infinite;
+    }
+
+    .loader1 {
+        background: $paletteColor6;
+        animation-delay: 0.2s;
+    }
+
+    .loader2 {
+        background: $paletteColor7;
+        animation-delay: 0.1s;
+    }
+}
+
+@keyframes rotation1 {
+    to {
+        transform: rotate(360deg);
+    }
+}

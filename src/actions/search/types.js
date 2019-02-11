@@ -1,0 +1,4 @@
+export default Object.freeze({
+    CLEAR_SEARCH_VALUE:  'CLEAR_SEARCH_VALUE',
+    CHANGE_SEARCH_VALUE: 'CHANGE_SEARCH_VALUE'
+});

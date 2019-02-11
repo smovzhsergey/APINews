@@ -1,0 +1,113 @@
+@import '../../theme/reset';
+@import '../../theme/palette';
+$button-size: 38px;
+
+.feed{
+  width: 80%;
+  margin: 0 auto;
+
+  .header {
+    background: $paletteColor1;
+    color: $paletteColor2;
+    padding: 20px;
+  }
+  div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+
+    .search{
+      flex: 0 1 60%;
+    }
+
+    button{
+      background: none;
+      border: 1px solid $paletteColor2;
+      border-radius: 5px;
+      color: $paletteColor2;
+      cursor: pointer;
+      outline: none;
+      padding: 10px 25px;
+      margin-left: 20px;
+
+    }
+  }
+
+  .activeFilter{
+    background-color: $paletteColor2;
+    border: 1px solid $paletteColor4;
+    color: $paletteColor1;
+  }
+
+  .postEnter {
+    opacity: 0.01;
+    transform: scale(0.9);
+  }
+
+  .postEnterActive {
+    transition: all 0.8s ease-out;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .postAppear{
+    opacity: 0.01;
+    transform: scale(0.4);
+  }
+
+  .postAppearActive{
+    transition: opacity 0.8s ease-in;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .postDelete{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .postDeleteActive{
+    transition: all 0.8s ease-in;
+    opacity: 0.01;
+    transform: scale(0.05);
+  }
+
+  .hideUp{
+    background: $paletteColor3;
+    border: 2px solid $paletteColor1;
+    border-radius: 5px;
+    color: $paletteColor2;
+    cursor: pointer;
+    display: none;
+    font-weight: 700;
+    height: $button-size;
+    width: $button-size;
+    line-height: $button-size;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    text-align: center;
+    transition: opacity 0.4s ease;
+
+    &:hover{
+      opacity: 1;
+    }
+
+  }
+
+  .visibleUp{
+    @extend .hideUp;
+    display: block;
+  }
+
+  @media (min-width: 1400px) {
+    width: 1100px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 96%;
+  }
+}
+

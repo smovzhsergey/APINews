@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`view actions:  "addNewsInView" actions creator should produce a corresponding action 1`] = `
+Object {
+  "type": "ADD_NEWS_IN_VIEW",
+}
+`;
+
+exports[`view actions:  "clearNewsUpdate" actions creator should produce a corresponding action 1`] = `
+Object {
+  "type": "CLEAR_NEWS_UPDATE",
+}
+`;
+
+exports[`view actions:  "closeFilterPanel" actions creator should produce a corresponding action 1`] = `
+Object {
+  "type": "CLOSE_FILTER_PANEL",
+}
+`;
+
+exports[`view actions:  "hideButtonUp" actions creator should produce a corresponding action 1`] = `
+Object {
+  "type": "HIDE_BUTTON_UP",
+}
+`;
+
+exports[`view actions:  "openFilterPanel" actions creator should produce a corresponding action 1`] = `
+Object {
+  "type": "OPEN_FILTER_PANEL",
+}
+`;
+
+exports[`view actions:  "resetNewsInView" actions creator should produce a corresponding action 1`] = `
+Object {
+  "type": "RESET_NEWS_IN_VIEW",
+}
+`;
+
+exports[`view actions:  "setQuantityNewNews" actions creator should produce a corresponding action 1`] = `
+Object {
+  "payload": 5,
+  "type": "SET_QUANTITY_NEW_NEWS",
+}
+`;
+
+exports[`view actions:  "showButtonUp" actions creator should produce a corresponding action 1`] = `
+Object {
+  "type": "SHOW_BUTTON_UP",
+}
+`;
+
+exports[`view actions:  "updateNews" actions creator should produce a corresponding action 1`] = `
+Object {
+  "type": "UPDATE_NEWS",
+}
+`;

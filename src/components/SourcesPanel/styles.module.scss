@@ -1,0 +1,129 @@
+@import '../../theme/reset';
+@import '../../theme/palette';
+
+.sourcePanel {
+  color: $paletteColor2;
+  div{
+    overflow: hidden;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      cursor: pointer;
+      flex: 0 1 20%;
+      text-align: center;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .category {
+    background-color: $paletteColor4;
+    flex-basis: 100%;
+    justify-content: space-around;
+  }
+
+  .sources{
+    background-color: $paletteColor3;
+    flex-basis: 100%;
+    justify-content: flex-start;
+
+    li {
+      padding: 10px 0;
+    }
+  }
+  
+  p{
+    background-color: $paletteColor1;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0;
+    line-height: 40px;
+
+    button{
+      float: right;
+      color: $paletteColor4;
+      border: 2px solid $paletteColor4;
+      cursor: default;
+    }
+
+    .activeButton{
+      color: $paletteColor2;
+      border: 2px solid $paletteColor2;
+      cursor: pointer;
+    }
+
+    span{
+      float: left;
+      margin-right: 20px;
+    }
+
+    .defaultSpan{
+      color: $paletteColor4;
+      cursor: default;
+    }
+    
+    &:after{
+      content: '';
+      clear: both;
+      display: table;
+    }
+  }
+
+  .activeSource{
+    font-weight: 700;
+    position: relative;
+
+    text-shadow: 0.5px 0.5px 1px $paletteColor4;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .unUsed{
+    display: none;
+    height: 0;
+    opacity: 0;
+  }
+
+
+  .animationClose{
+    animation: close ease-in 0.2s;
+    animation-fill-mode: forwards;
+   }
+
+  .animationOpen{
+    animation: open ease-in-out 0.3s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes open {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes close {
+  from {
+    height: auto;
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+
+}
+

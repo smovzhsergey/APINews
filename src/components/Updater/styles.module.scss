@@ -1,0 +1,15 @@
+@import '../../theme/reset';
+@import '../../theme/palette';
+
+.updater{
+  border: 2px solid $paletteColor1;
+  border-radius: 3px;
+  background-color: $paletteColor3;
+  color: $paletteColor2;
+  display: flex;
+  position: fixed;
+  right: 30px;
+  top: 100px;
+  padding: 4px 20px;
+}
+

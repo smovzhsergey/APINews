@@ -1,0 +1,57 @@
+@import '../../theme/reset';
+@import '../../theme/palette';
+
+.search {
+  position: relative;
+
+  input{
+    background-color: transparent;
+    background-image: url('../../theme/assets/search.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    border: none;
+    border-bottom: 2px solid $paletteColor4;
+    color: $paletteColor2;
+    margin-right: 10px;
+    outline: none;
+    padding: 10px 10px 10px 30px;
+
+    &:focus{
+      border-bottom: 2px solid $paletteColor2;
+    }
+  }
+
+  .clearInput{
+    position: absolute;
+    top: 40%;
+    left: 220px;
+    width: 10px;
+    height: 10px;
+    background-image: url('../../theme/assets/cross.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &:hover {
+      background-position: -13px 0;
+    }
+  }
+
+  .matchEnter{
+    opacity: 0.1;
+  }
+  .matchEnterEnterActive{
+    opacity: 1;
+  }
+  .matchEnterAppear{
+    opacity: 0.1;
+  }
+  .matchEnterAppearActive{
+    opacity: 1;
+  }
+  .matchEnterDelete{
+    opacity: 1;
+  }
+  .matchEnterDeleteActive{
+    opacity: 0.1;
+  }
+}
