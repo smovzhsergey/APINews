@@ -9,6 +9,7 @@ import { TweenLite } from 'gsap';
 
 // Components
 import Article from '../Article';
+import Links from '../Links';
 import Search from '../Search';
 import SourcesPanel from '../SourcesPanel';
 import Spinner from '../Spinner';
@@ -276,6 +277,7 @@ export default class ArticleList extends Component {
                 { articleList }
                 { this.showUpdater() }
                 <span className = { buttonClass } id = 'upButton' onClick = { this.scrollOnTop }>Up</span>
+                <Links />
             </section>
         );
     }
