@@ -7,7 +7,7 @@ export const sourcesForView = [
     'fox-sports',
     'talksport',
     'fortune',
-    'the-economist',
+    'cnn',
     'reuters',
     'the-telegraph',
     'techcrunch',
